@@ -42,7 +42,7 @@ Ce projet est un exercice afin d'apprendre à maîtriser React, et notamment Tai
 ---
 
 **1. Responsive design avec Tailwind (src/components/Hero.jsx)**
-
+> style responsive et réactif grâce à TailwindCSS.
 ```jsx name=src/components/Hero.jsx
 <div className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-3 sm:gap-4 mb-8 sm:mb-12 animate-in slide-in-from-bottom duration-700 delay-300">
   <button className="group w-full sm:w-auto px-6 sm:px-8 py-3 sm:py-4 bg-gradient-to-b from-blue-600 to-blue-400 rounded-lg font-semibold text-sm sm:-text-base transition-all duration-300 hover:scale-102 flex items-center justify-center space-x-2">
@@ -59,12 +59,12 @@ Ce projet est un exercice afin d'apprendre à maîtriser React, et notamment Tai
 </div>
 
 ```
-> style responsive et réactif grâce à TailwindCSS.
+
 
 ---
 
 **2. Carte flottante adaptative (src/components/Hero.jsx)**
-
+> cette carte affichant du contenu est rendue réactive au clic sur différents boutons (que j'ai simplifiés ici pour faciliter la lecture).
 ```jsx name=src/components/Hero.jsx
 const [activeTab, setActiveTab] = useState("App.jsx")
 
@@ -99,12 +99,12 @@ const [activeTab, setActiveTab] = useState("App.jsx")
   </div>
 </div>
 ```
-> cette carte affichant du contenu est rendue réactive au clic sur différents boutons (que j'ai simplifiés ici pour faciliter la lecture).
+
 
 ---
 
-**3. Contenu des cartes stocké dans un fichier (src/components/Hero.jsx)**
-
+**3. Contenu des cartes stocké dans un fichier (src/data/CodeExamples.js)**
+> ce contenu délocalisé dans un fichier permet d'optimiser la maintenabilité du code, ainsi que sa lecture.
 ```jsx name=src/data/CodeExamples.js
 
 export const floatingCards = {
@@ -138,4 +138,4 @@ export const floatingCards = {
 
 }
 ```
-> ce contenu délocalisé dans un fichier permet d'optimiser la maintenabilité du code, ainsi que sa lecture.
+
